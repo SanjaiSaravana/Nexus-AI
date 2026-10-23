@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg)" />
+
+  <!-- Navigation / Header -->
+  <rect x="0" y="0" width="1200" height="60" fill="#0f172a" opacity="0.9" />
+  <circle cx="40" cy="30" r="14" fill="#6366f1" />
+  <text x="65" y="36" fill="#f8fafc" font-family="Inter, sans-serif" font-weight="700" font-size="18">NEXUS AI</text>
+  <text x="170" y="36" fill="#94a3b8" font-family="Inter, sans-serif" font-size="14">Controlled Actions &amp; Immutable Audit Trail</text>
+
+  <!-- Section 1: Pending Action Proposals -->
+  <text x="50" y="105" fill="#ffffff" font-family="Inter, sans-serif" font-size="18" font-weight="700">Pending Actions Requiring Confirmation (1)</text>
+
+  <!-- Action Card -->
+  <rect x="50" y="125" width="1100" height="150" rx="12" fill="#1e1b4b" fill-opacity="0.4" stroke="#6366f1" stroke-width="1.5" />
+  <rect x="75" y="145" width="100" height="24" rx="12" fill="#ef4444" fill-opacity="0.2" />
+  <text x="90" y="161" fill="#f87171" font-family="Inter, sans-serif" font-size="11" font-weight="700">RISK: HIGH</text>
+  <text x="190" y="161" fill="#c7d2fe" font-family="Inter, sans-serif" font-size="12">Tool: calendar | Action: create_event</text>
+
+  <text x="75" y="200" fill="#ffffff" font-family="Inter, sans-serif" font-size="16" font-weight="600">Interview Preparation: System Design &amp; SQL Query Blocks</text>
+  <text x="75" y="225" fill="#94a3b8" font-family="Inter, sans-serif" font-size="13">Time: Tomorrow, 6:00 PM – 9:30 PM • Staged by Flagship Multi-Agent Workflow</text>
+
+  <!-- Buttons -->
+  <rect x="870" y="195" width="120" height="36" rx="8" fill="#22c55e" />
+  <text x="905" y="218" fill="#ffffff" font-family="Inter, sans-serif" font-size="13" font-weight="600">Approve</text>
+  <rect x="1005" y="195" width="120" height="36" rx="8" fill="transparent" stroke="#ef4444" stroke-width="1" />
+  <text x="1045" y="218" fill="#f87171" font-family="Inter, sans-serif" font-size="13" font-weight="600">Reject</text>
+
+  <!-- Section 2: Audit Trail -->
+  <text x="50" y="325" fill="#ffffff" font-family="Inter, sans-serif" font-size="18" font-weight="700">Sanitized Immutable Audit Trail</text>
+
+  <rect x="50" y="345" width="1100" height="310" rx="12" fill="#0f172a" stroke="#334155" />
+  
+  <!-- Table Header -->
+  <rect x="50" y="345" width="1100" height="40" rx="12" fill="#1e293b" />
+  <text x="75" y="370" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12" font-weight="600">TIMESTAMP</text>
+  <text x="240" y="370" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12" font-weight="600">TOOL / ACTION</text>
+  <text x="440" y="370" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12" font-weight="600">SANITIZED PARAMETERS</text>
+  <text x="850" y="370" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12" font-weight="600">STATUS</text>
+  <text x="1020" y="370" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12" font-weight="600">APPROVAL</text>
+
+  <!-- Row 1 -->
+  <text x="75" y="420" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="12">2026-10-23 18:30:12</text>
+  <text x="240" y="420" fill="#38bdf8" font-family="Inter, sans-serif" font-size="12">task / create_task</text>
+  <text x="440" y="420" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">{"title": "System Design Practice", "priority": "high"}</text>
+  <text x="850" y="420" fill="#22c55e" font-family="Inter, sans-serif" font-size="12">executed (18ms)</text>
+  <text x="1020" y="420" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">auto_approved</text>
+  <line x1="50" y1="440" x2="1150" y2="440" stroke="#1e293b" />
+
+  <!-- Row 2 -->
+  <text x="75" y="475" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="12">2026-10-23 18:28:45</text>
+  <text x="240" y="475" fill="#38bdf8" font-family="Inter, sans-serif" font-size="12">calendar / get_free_slots</text>
+  <text x="440" y="475" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">{"date": "2026-10-24", "duration": 90}</text>
+  <text x="850" y="475" fill="#22c55e" font-family="Inter, sans-serif" font-size="12">executed (12ms)</text>
+  <text x="1020" y="475" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">read_only</text>
+  <line x1="50" y1="495" x2="1150" y2="495" stroke="#1e293b" />
+
+  <!-- Row 3 -->
+  <text x="75" y="530" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="12">2026-10-23 18:25:01</text>
+  <text x="240" y="530" fill="#f87171" font-family="Inter, sans-serif" font-size="12">email / send_email</text>
+  <text x="440" y="530" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">{"to": "recruiter@stripe.com", "auth": "******"}</text>
+  <text x="850" y="530" fill="#f59e0b" font-family="Inter, sans-serif" font-size="12">pending</text>
+  <text x="1020" y="530" fill="#fbbf24" font-family="Inter, sans-serif" font-size="12">user_required</text>
+  <line x1="50" y1="550" x2="1150" y2="550" stroke="#1e293b" />
+
+  <!-- Row 4 -->
+  <text x="75" y="585" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="12">2026-10-23 18:20:10</text>
+  <text x="240" y="585" fill="#38bdf8" font-family="Inter, sans-serif" font-size="12">memory / create_memory</text>
+  <text x="440" y="585" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">{"content": "User prepared for Stripe interview", "imp": 0.88}</text>
+  <text x="850" y="585" fill="#22c55e" font-family="Inter, sans-serif" font-size="12">executed (24ms)</text>
+  <text x="1020" y="585" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">auto_approved</text>
+</svg>

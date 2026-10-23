@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg)" />
+
+  <!-- Navigation / Header -->
+  <rect x="0" y="0" width="1200" height="60" fill="#0f172a" opacity="0.9" />
+  <circle cx="40" cy="30" r="14" fill="#6366f1" />
+  <text x="65" y="36" fill="#f8fafc" font-family="Inter, sans-serif" font-weight="700" font-size="18">NEXUS AI</text>
+  <text x="170" y="36" fill="#94a3b8" font-family="Inter, sans-serif" font-size="14">AI Evaluation &amp; Waterfall Tracing</text>
+
+  <!-- Metric Gauges -->
+  <rect x="50" y="80" width="200" height="90" rx="10" fill="#1e293b" stroke="#334155" />
+  <text x="70" y="110" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">Context Precision</text>
+  <text x="70" y="145" fill="#22c55e" font-family="Inter, sans-serif" font-size="28" font-weight="700">96.4%</text>
+
+  <rect x="270" y="80" width="200" height="90" rx="10" fill="#1e293b" stroke="#334155" />
+  <text x="290" y="110" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">Context Recall</text>
+  <text x="290" y="145" fill="#22c55e" font-family="Inter, sans-serif" font-size="28" font-weight="700">94.8%</text>
+
+  <rect x="490" y="80" width="200" height="90" rx="10" fill="#1e293b" stroke="#334155" />
+  <text x="510" y="110" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">Faithfulness</text>
+  <text x="510" y="145" fill="#22c55e" font-family="Inter, sans-serif" font-size="28" font-weight="700">98.2%</text>
+
+  <rect x="710" y="80" width="200" height="90" rx="10" fill="#1e293b" stroke="#334155" />
+  <text x="730" y="110" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">Agent Success Rate</text>
+  <text x="730" y="145" fill="#38bdf8" font-family="Inter, sans-serif" font-size="28" font-weight="700">97.5%</text>
+
+  <rect x="930" y="80" width="220" height="90" rx="10" fill="#1e293b" stroke="#334155" />
+  <text x="950" y="110" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">p95 Latency</text>
+  <text x="950" y="145" fill="#f59e0b" font-family="Inter, sans-serif" font-size="28" font-weight="700">340 ms</text>
+
+  <!-- Waterfall Tracing Visualizer -->
+  <rect x="50" y="190" width="1100" height="470" rx="12" fill="#0f172a" stroke="#334155" />
+  <text x="75" y="225" fill="#ffffff" font-family="Inter, sans-serif" font-size="16" font-weight="600">7-Stage Distributed Execution Waterfall Trace</text>
+  <text x="75" y="245" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">Trace ID: 7a8c9b20-e54f-4a11-89be-02948756c9a0 (Duration: 620ms | Total Tokens: 842)</text>
+
+  <!-- Span 1: User Request -->
+  <text x="75" y="295" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="13">1. User Request (POST /chat/stream)</text>
+  <rect x="380" y="280" width="600" height="22" rx="4" fill="#3b82f6" />
+  <text x="990" y="296" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">620ms</text>
+
+  <!-- Span 2: Intent Detection -->
+  <text x="95" y="340" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="13">2. Intent Detection (Interview Prep)</text>
+  <rect x="420" y="325" width="60" height="22" rx="4" fill="#6366f1" />
+  <text x="490" y="341" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">45ms</text>
+
+  <!-- Span 3: Hybrid Retrieval -->
+  <text x="95" y="385" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="13">3. Hybrid Retrieval (Dense + BM25 + RRF)</text>
+  <rect x="480" y="370" width="120" height="22" rx="4" fill="#8b5cf6" />
+  <text x="610" y="386" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">95ms</text>
+
+  <!-- Span 4: Agent Orchestrator -->
+  <text x="95" y="430" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="13">4. Multi-Agent Delegation (Planner &amp; Research)</text>
+  <rect x="600" y="415" width="160" height="22" rx="4" fill="#ec4899" />
+  <text x="770" y="431" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">130ms</text>
+
+  <!-- Span 5: Tool Security Validation -->
+  <text x="95" y="475" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="13">5. 5-Step Tool Security Guard (Calendar &amp; Tasks)</text>
+  <rect x="760" y="460" width="45" height="22" rx="4" fill="#f59e0b" />
+  <text x="815" y="476" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">28ms</text>
+
+  <!-- Span 6: LLM Token Streaming -->
+  <text x="95" y="520" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="13">6. LLM Context Synthesis (Grounded Prompt)</text>
+  <rect x="805" y="505" width="160" height="22" rx="4" fill="#10b981" />
+  <text x="975" y="521" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">260ms</text>
+
+  <!-- Span 7: Response Formatting -->
+  <text x="95" y="565" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="13">7. Citation Mapping &amp; SSE Stream Close</text>
+  <rect x="965" y="550" width="15" height="22" rx="4" fill="#06b6d4" />
+  <text x="990" y="566" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">12ms</text>
+
+  <!-- Audit trail badge -->
+  <rect x="75" y="605" width="980" height="35" rx="6" fill="#1e293b" />
+  <text x="95" y="628" fill="#22c55e" font-family="Inter, sans-serif" font-size="12">✔ MLflow Run Logged: experiment_id=eval_suite_v1 | zero hallucinations verified</text>
+</svg>

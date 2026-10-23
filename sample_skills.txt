@@ -1,0 +1,6 @@
+Candidate Name: Alex Mercer
+Role: Principal Cloud & AI Architect
+Technical Skills: Python, FastAPI, TypeScript, React, Docker, Kubernetes, PostgreSQL, pgvector, Neo4j, Hybrid RAG, System Design.
+Recent Projects: Built NEXUS AI enterprise productivity platform with 4-tier personalized cognitive memory and reciprocal rank fusion search.
+Education: Master of Science in Computer Science.
+Availability: Immediate.

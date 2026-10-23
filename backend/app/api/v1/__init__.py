@@ -1,0 +1,31 @@
+from app.api.v1 import (
+    auth,
+    users,
+    projects,
+    tasks,
+    goals,
+    dashboard,
+    documents,
+    chat,
+    memories,
+    knowledge_graph,
+    agents,
+    actions,
+    calendar,
+)
+
+__all__ = [
+    "auth",
+    "users",
+    "projects",
+    "tasks",
+    "goals",
+    "dashboard",
+    "documents",
+    "chat",
+    "memories",
+    "knowledge_graph",
+    "agents",
+    "actions",
+    "calendar",
+]

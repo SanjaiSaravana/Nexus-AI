@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="userBubble" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg)" />
+
+  <!-- Navigation / Header -->
+  <rect x="0" y="0" width="1200" height="60" fill="#0f172a" opacity="0.9" />
+  <circle cx="40" cy="30" r="14" fill="#6366f1" />
+  <text x="65" y="36" fill="#f8fafc" font-family="Inter, sans-serif" font-weight="700" font-size="18">NEXUS AI</text>
+  <text x="170" y="36" fill="#94a3b8" font-family="Inter, sans-serif" font-size="14">AI Assistant &amp; Knowledge Chat</text>
+
+  <!-- Left Sidebar: Conversations & Vault -->
+  <rect x="30" y="80" width="260" height="580" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1" />
+  <text x="50" y="115" fill="#ffffff" font-family="Inter, sans-serif" font-size="14" font-weight="600">Knowledge Vault</text>
+  <!-- Doc 1 -->
+  <rect x="50" y="130" width="220" height="40" rx="6" fill="#1e293b" />
+  <text x="65" y="155" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="12">📄 Stripe_JD_Cloud.pdf</text>
+  <!-- Doc 2 -->
+  <rect x="50" y="180" width="220" height="40" rx="6" fill="#1e293b" />
+  <text x="65" y="205" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="12">📄 Senior_Resume.docx</text>
+
+  <text x="50" y="260" fill="#ffffff" font-family="Inter, sans-serif" font-size="14" font-weight="600">Recent Chats</text>
+  <rect x="50" y="280" width="220" height="36" rx="6" fill="#312e81" stroke="#6366f1" stroke-width="1" />
+  <text x="65" y="303" fill="#e0e7ff" font-family="Inter, sans-serif" font-size="12">Interview Preparation Plan</text>
+  <rect x="50" y="325" width="220" height="36" rx="6" fill="#1e293b" />
+  <text x="65" y="348" fill="#94a3b8" font-family="Inter, sans-serif" font-size="12">System Design Questions</text>
+
+  <!-- Main Chat Container -->
+  <rect x="310" y="80" width="580" height="580" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1" />
+
+  <!-- User message -->
+  <rect x="520" y="110" width="350" height="50" rx="12" fill="url(#userBubble)" />
+  <text x="535" y="140" fill="#ffffff" font-family="Inter, sans-serif" font-size="13">I have an interview tomorrow. Help me prepare.</text>
+
+  <!-- Agent Activity Stream Indicator -->
+  <rect x="330" y="180" width="380" height="30" rx="15" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" />
+  <circle cx="348" cy="195" r="4" fill="#a855f7" />
+  <text x="362" y="200" fill="#c7d2fe" font-family="Inter, sans-serif" font-size="12">Agent Activity: Reading job description &amp; analyzing skills...</text>
+
+  <!-- AI Message -->
+  <rect x="330" y="225" width="540" height="240" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="350" y="255" fill="#f8fafc" font-family="Inter, sans-serif" font-size="14" font-weight="600">Senior Cloud Engineer Preparation Briefing</text>
+  <text x="350" y="285" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="12">Based on your uploaded resume [1] and the Stripe Job Description [2],</text>
+  <text x="350" y="305" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="12">I've generated a 4-block structured study plan focusing on System Design,</text>
+  <text x="350" y="325" fill="#cbd5e1" font-family="Inter, sans-serif" font-size="12">SQL query optimization, and STAR behavioral rehearsal.</text>
+
+  <rect x="350" y="345" width="500" height="100" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1" />
+  <text x="365" y="375" fill="#38bdf8" font-family="Inter, sans-serif" font-size="12" font-weight="600">⚡ Created 4 Actionable Tasks in Task Board</text>
+  <text x="365" y="400" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">1. SQL Optimization &amp; Indexing (6:00 PM - 7:00 PM)</text>
+  <text x="365" y="420" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">2. Distributed System Design: Microservices (7:15 PM - 8:15 PM)</text>
+
+  <!-- Chat Input Bar -->
+  <rect x="330" y="605" width="540" height="42" rx="21" fill="#1e293b" stroke="#475569" stroke-width="1" />
+  <text x="355" y="631" fill="#64748b" font-family="Inter, sans-serif" font-size="13">Ask anything about your documents, tasks, or projects...</text>
+  <circle cx="848" cy="626" r="14" fill="#6366f1" />
+  <text x="844" y="630" fill="#ffffff" font-size="14">→</text>
+
+  <!-- Right Drawer: Citations & Evidence -->
+  <rect x="910" y="80" width="260" height="580" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1" />
+  <text x="930" y="115" fill="#ffffff" font-family="Inter, sans-serif" font-size="14" font-weight="600">Grounded Citations (2)</text>
+  <!-- Citation 1 -->
+  <rect x="930" y="135" width="220" height="110" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="945" y="160" fill="#6366f1" font-family="Inter, sans-serif" font-size="12" font-weight="700">[1] Senior_Resume.docx</text>
+  <text x="945" y="185" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">"6+ years building distributed cloud platforms in Python and TypeScript..."</text>
+  <text x="945" y="230" fill="#22c55e" font-family="Inter, sans-serif" font-size="10">Relevance: 98%</text>
+
+  <!-- Citation 2 -->
+  <rect x="930" y="260" width="220" height="110" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="945" y="285" fill="#6366f1" font-family="Inter, sans-serif" font-size="12" font-weight="700">[2] Stripe_JD_Cloud.pdf</text>
+  <text x="945" y="310" fill="#94a3b8" font-family="Inter, sans-serif" font-size="11">"Required: AWS, Kubernetes, Distributed consensus, PostgreSQL performance..."</text>
+  <text x="945" y="355" fill="#22c55e" font-family="Inter, sans-serif" font-size="10">Relevance: 95%</text>
+</svg>
